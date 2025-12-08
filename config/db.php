@@ -1,16 +1,17 @@
 <?php
 class Database {
-    private $host = "localhost";
-    private $dbname = "inventario_ventas";
+    private $host = "mysql.railway.internal";
+    private $port = 3306;
+    private $dbname = "railway";
     private $username = "root";
-    private $password = "";
+    private $password = "EEhfIhkFWNzNnsGLHfGfyrkxRIomnqDh";
     private $conn;
 
     public function getConnection() {
         $this->conn = null;
 
         try {
-            $dsn = "mysql:host={$this->host};dbname={$this->dbname};charset=utf8mb4";
+            $dsn = "mysql:host={$this->host};port={$this->port};dbname={$this->dbname};charset=utf8mb4";
             $this->conn = new PDO($dsn, $this->username, $this->password);
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -21,3 +22,4 @@ class Database {
         return $this->conn;
     }
 }
+
