@@ -1,12 +1,12 @@
 <?php
-require_once dirname(__FILE__, 2) . '/helpers/auth_helper.php';
+require_once __DIR__ . '/../../helpers/auth_helper.php';
 requireLogin(); // Bloquea acceso si no hay sesión
 ?>
 
 <?php
-require_once dirname(__FILE__, 2) . '/controllers/ProductController.php';
-require_once dirname(__FILE__, 1) . '/templates/header.php';
-require_once dirname(__FILE__, 1) . '/templates/navbar.php';
+require_once __DIR__ . '/../../controllers/ProductController.php';
+require_once __DIR__ . '/../templates/header.php';
+require_once __DIR__ . '/../templates/navbar.php';
 
 $productController = new ProductController();
 $filters = [

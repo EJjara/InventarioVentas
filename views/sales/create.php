@@ -1,11 +1,10 @@
 <?php
-require_once dirname(__FILE__, 2) . '/helpers/auth_helper.php';
+require_once __DIR__ . '/../../helpers/auth_helper.php';
 requireLogin();
 
-require_once dirname(__FILE__, 2) . '/config/db.php';
-require_once dirname(__FILE__, 2) . '/models/Product.php';
-require_once dirname(__FILE__, 2) . '/models/Customer.php';
-
+require_once __DIR__ . '/../../config/db.php';
+require_once __DIR__ . '/../../models/Product.php';
+require_once __DIR__ . '/../../models/Customer.php';
 
 $productModel = new Product();
 $products = $productModel->getAll();
@@ -20,9 +19,8 @@ foreach ($cart as $item) {
 }
 ?>
 
-<?php include_once dirname(__FILE__, 1) . '/templates/header.php'; ?>
-<?php include_once dirname(__FILE__, 1) . '/templates/navbar.php'; ?>
-
+<?php include_once __DIR__ . '/../templates/header.php'; ?>
+<?php include_once __DIR__ . '/../templates/navbar.php'; ?>
 
 <div class="container mt-4">
     <!-- Encabezado -->
@@ -132,4 +130,4 @@ foreach ($cart as $item) {
 
 </div>
 
-<?php include_once dirname(__FILE__, 1) . '/templates/footer.php'; ?>
+<?php include_once __DIR__ . '/../templates/footer.php'; ?>
