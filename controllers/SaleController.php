@@ -1,9 +1,9 @@
 <?php
-require_once __DIR__ . '/../helpers/auth_helper.php';
+require_once dirname(__FILE__, 1) . '/helpers/auth_helper.php';
 
-require_once __DIR__ . '/../config/db.php';
-require_once __DIR__ . '/../models/Sale.php';
-require_once __DIR__ . '/../models/Product.php';
+require_once dirname(__FILE__, 1) . '/config/db.php';
+require_once dirname(__FILE__, 1) . '/models/Sale.php';
+require_once dirname(__FILE__, 1) . '/models/Product.php';
 
 class SaleController
 {

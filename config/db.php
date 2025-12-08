@@ -2,7 +2,7 @@
 class Database {
     private $host = "crossover.proxy.rlwy.net";
     private $port = 25173;
-    private $dbname = "railway";
+    private $dbname = "inventario_ventas";
     private $username = "root";
     private $password = "EEhfIhkFWNzNnsGLHfGfyrkxRIomnqDh";
     private $conn;
@@ -22,4 +22,3 @@ class Database {
         return $this->conn;
     }
 }
-

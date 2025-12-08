@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/../../controllers/CustomerController.php';
-require_once __DIR__ . '/../../helpers/auth_helper.php';
+require_once dirname(__FILE__, 2) . '/controllers/CustomerController.php';
+require_once dirname(__FILE__, 2) . '/helpers/auth_helper.php';
 requireLogin(); // Bloquea si no hay sesión
 
 // Validar permiso

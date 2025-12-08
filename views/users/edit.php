@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../../helpers/auth_helper.php';
+require_once dirname(__FILE__, 2) . '/helpers/auth_helper.php';
 requireLogin(); // Bloquea acceso si no hay sesión
 
 if (!canManageUsers()):
@@ -9,7 +9,7 @@ endif;
 ?>
 
 <?php
-require_once __DIR__ . '/../../controllers/UserController.php';
+require_once dirname(__FILE__, 2) . '/controllers/UserController.php';
 $controller = new UserController();
 
 if (!isset($_GET['id'])) {

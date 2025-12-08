@@ -1,8 +1,8 @@
 <?php
-require_once __DIR__ . '/../helpers/auth_helper.php';
+require_once dirname(__FILE__, 2) . '/helpers/auth_helper.php';
 requireLogin();
 
-require_once __DIR__ . '/../config/db.php'; // tu conexión PDO
+require_once dirname(__FILE__, 2) . '/config/db.php'; // conexión PDO
 
 // Conexión a la base de datos
 $db = (new Database())->getConnection();

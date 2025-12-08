@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../../helpers/auth_helper.php';
+require_once dirname(__FILE__, 2) . '/helpers/auth_helper.php';
 requireLogin(); // Bloquea acceso si no hay sesión
 
 if (!canEdit()):
@@ -9,8 +9,8 @@ endif;
 ?>
 
 <?php
-require_once __DIR__ . '/../../controllers/ProductController.php';
-require_once __DIR__ . '/../../models/Category.php'; // 👈 Agregamos esto
+require_once dirname(__FILE__, 2) . '/controllers/ProductController.php';
+require_once dirname(__FILE__, 2) . '/models/Category.php';// 👈 Agregamos esto
 
 $controller = new ProductController();
 $categoryModel = new Category(); // 👈 Instanciamos modelo

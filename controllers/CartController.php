@@ -1,7 +1,8 @@
 <?php
 session_start();
-require_once __DIR__ . '/../config/db.php';
-require_once __DIR__ . '/../models/Product.php';
+require_once dirname(__FILE__, 1) . '/config/db.php';
+require_once dirname(__FILE__, 1) . '/models/Product.php';
+
 
 class CartController
 {
