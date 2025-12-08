@@ -1,8 +1,6 @@
 <?php
-session_start();
-require_once __DIR__ . '/../config/constants.php';
-require_once APP_ROOT . '/models/User.php';
-
+session_start(); 
+require_once dirname(__FILE__, 1) . '/models/User.php';
 
 $userModel = new User();
 
