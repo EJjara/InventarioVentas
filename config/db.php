@@ -1,7 +1,7 @@
 <?php
 class Database {
-    private $host = "mysql.railway.internal";
-    private $port = 3306;
+    private $host = "crossover.proxy.rlwy.net";
+    private $port = 25173;
     private $dbname = "railway";
     private $username = "root";
     private $password = "EEhfIhkFWNzNnsGLHfGfyrkxRIomnqDh";
