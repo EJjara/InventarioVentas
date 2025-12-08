@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once dirname(__FILE__, 2) . '/models/User.php';
+require_once dirname(__DIR__) . '/models/User.php';
 
 $userModel = new User();
 
