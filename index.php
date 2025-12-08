@@ -1,3 +1,4 @@
 <?php 
-require_once '/views/dashboard.php';
+    header("Location: /views/auth/login.php");
+    exit;
 ?>
